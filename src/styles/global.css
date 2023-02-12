@@ -16,6 +16,10 @@ header {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+article {
+  margin-top: 70px;
+}
+
 .h-bg {
   background: #5A3F37;
   background: radial-gradient(#2C7744, #5A3F37);

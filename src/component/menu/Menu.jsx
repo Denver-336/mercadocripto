@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 export const Menu = () => {
   return (
-    <header>
+    <header className='fixed-top'>
       <nav className='navbar navbar-expand-md navbar-dark'>
         <div className='container-fluid mx-5'>
           <img className='navbar-brand' src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/40px-JSON_vector_logo.svg.png' />

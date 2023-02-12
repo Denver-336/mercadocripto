@@ -7,26 +7,36 @@ export const ListaCripto = () => {
   const { data, error, loading } = metodoGET(API_URL)
 
   return (
-    <>
+    <article>
       {
-      loading ? (<Loader />)
-        : (<h1 className="text-center h1 h-bg">Criptomonedas</h1>)
+        loading ? (<Loader />)
+          : (<h1 className="text-center mt-3 h1 h-bg">Criptomonedas</h1>)
       }
       {error && (<h1>Error en la petición</h1>)}
-      <div className="row d-flex align-items-center justify-content-center g-2 mt-">
-        {
-          data?.map(({ symbol, id, name, priceUsd }) => (
-            <div key={id} className="card text-center mb-3 col-10 col-sm-3 col-lg-2 m-4">
-              <div className="card-header">{symbol}</div>
-              <div className="card-body">
-                <h5 className="card-title">{name}</h5>
-                <p className="card-text">$ {parseFloat(priceUsd).toFixed(2)}</p>
-                <Link to={`/lista/${id}`} className="btn btn-outline-dark">Detalles</Link>
-              </div>
-            </div>
-          ))
-        }
+      <div className='table-responsive-sm mx-3 mx-sm-5 mt-3'>
+        <table className='table table-bordered table-sm'>
+          <thead>
+            <tr className='table-active'>
+              <th className='text-center' scope='col'>Rankin</th>
+              <th className='text-center' scope='col'>Símbolo</th>
+              <th className='text-center' scope='col'>Nombré</th>
+              <th className='text-center' scope='col'>Precio</th>
+              <th className='text-center' scope='col'>Variación (24hs)</th>
+            </tr>
+          </thead>
+          <tbody className="text-light">
+            {
+              data?.map((data) => (
+                <tr key={data.id}>
+                  <th className='text-center' scope='row'>{data.rank}</th>
+                  <td className='text-center'>{data.symbol}</td>
+                  <td className='text-center'><Link to={`/lista/${data.id}`}>{data.name}</Link></td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
       </div>
-    </>
+    </article>
   )
 }
