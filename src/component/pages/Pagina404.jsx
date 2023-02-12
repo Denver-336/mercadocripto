@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export default function Pagina404 () {
   return (
@@ -11,7 +11,6 @@ export default function Pagina404 () {
           </p>
           <Link to='/' className='btn btn-primary'>Go Home</Link>
         </div>
-
       </div>
     </div>
   )

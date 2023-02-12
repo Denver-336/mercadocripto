@@ -9,19 +9,19 @@ import Pagina404 from './component/pages/Pagina404'
 import './styles/global.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<App />}>
-                <Route index element={<Home />} />
-            </Route>
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<App />}>
+        <Route index element={<Home />} />
+      </Route>
 
-            <Route path='lista' element={<App />}>
-                <Route index element={<ListaCripto />} />
-                <Route path=':id' element={<Cripto />} />
-            </Route>
+      <Route path='lista' element={<App />}>
+        <Route index element={<ListaCripto />} />
+        <Route path=':id' element={<Cripto />} />
+      </Route>
 
-            <Route path='*' element={<Pagina404 />} />
-        </Routes>
-    </BrowserRouter>
+      <Route path='*' element={<Pagina404 />} />
+    </Routes>
+  </BrowserRouter>
 
 )
