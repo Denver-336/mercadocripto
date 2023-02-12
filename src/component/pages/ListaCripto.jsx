@@ -10,7 +10,7 @@ export const ListaCripto = () => {
     <>
       {
       loading ? (<Loader />)
-        : (<h1 className="text-center h1">Criptomonedas</h1>)
+        : (<h1 className="text-center h1 h-bg">Criptomonedas</h1>)
       }
       {error && (<h1>Error en la petición</h1>)}
       <div className="row d-flex align-items-center justify-content-center g-2 mt-">
@@ -20,8 +20,8 @@ export const ListaCripto = () => {
               <div className="card-header">{symbol}</div>
               <div className="card-body">
                 <h5 className="card-title">{name}</h5>
-                <p className="card-text">{parseFloat(priceUsd).toFixed(4)}</p>
-                <Link to="/cripto" className="btn btn-outline-dark">Detalles</Link>
+                <p className="card-text">$ {parseFloat(priceUsd).toFixed(2)}</p>
+                <Link to={`/lista/${id}`} className="btn btn-outline-dark">Detalles</Link>
               </div>
             </div>
           ))

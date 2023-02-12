@@ -1,9 +1,13 @@
-import { ListaCripto } from "./component/pages/ListaCripto"
+import { Outlet } from "react-router-dom"
+import { Menu } from "./component/menu/Menu"
 
 function App() {
 
   return (
-    <ListaCripto />
+    <>
+      <Menu/>
+      <Outlet/>
+    </>
   )
 }
 

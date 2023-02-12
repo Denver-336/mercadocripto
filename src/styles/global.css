@@ -5,7 +5,23 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #061700, #52c234);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+header {
+  background: #5A3F37;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2C7744, #5A3F37);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2C7744, #5A3F37);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.h-bg {
+  background: #5A3F37;
+  background: radial-gradient(#2C7744, #5A3F37);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* loader */
@@ -21,5 +37,20 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #38ef7d, #11998e);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+/* home */
+.home-container {
+  height: 100vh;
+  text-align: center;
+}
+
+.home-container .title {
+  margin-bottom: .5rem;
+}
+
+.home-container .subtitle {
+  color:#5A3F37;
+  margin-bottom: 2rem;
+  opacity: .7;
 }
