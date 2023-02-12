@@ -1,6 +1,7 @@
-import { API_URL } from "../utils/env"
-import metodoGET from "../utils/metodoGET"
-import { Loader } from "./Loader/Loader"
+import { Link } from "react-router-dom"
+import { API_URL } from "../../utils/env"
+import metodoGET from "../../utils/metodoGET"
+import { Loader } from "./Loader"
 
 export const ListaCripto = () => {
   const { data, error, loading } = metodoGET(API_URL)
@@ -20,7 +21,7 @@ export const ListaCripto = () => {
               <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">{parseFloat(priceUsd).toFixed(4)}</p>
-                <a href="/" className="btn btn-outline-dark">Detalles</a>
+                <Link to="/cripto" className="btn btn-outline-dark">Detalles</Link>
               </div>
             </div>
           ))

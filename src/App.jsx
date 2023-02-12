@@ -1,4 +1,4 @@
-import { ListaCripto } from "./component/ListaCripto"
+import { ListaCripto } from "./component/pages/ListaCripto"
 
 function App() {
 
