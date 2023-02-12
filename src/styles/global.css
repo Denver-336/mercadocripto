@@ -24,6 +24,10 @@ header {
   -webkit-background-clip: text;
 }
 
+.bg-cripto {
+  height: 100vh;
+}
+
 /* loader */
 .loader {
   height: 100vh;
