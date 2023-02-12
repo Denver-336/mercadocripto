@@ -1,9 +1,9 @@
 body {
   background: #52c234;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #061700, #52c234);
+  background: -webkit-linear-gradient(to top, #061700, #52c234);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #061700, #52c234);
+  background: linear-gradient(to top, #061700, #52c234);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -15,10 +15,11 @@ body {
 
 /* card */
 .card {
-  background: #3CA55C;
+  background: #11998e;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);
+  background: -webkit-linear-gradient(to top, #38ef7d, #11998e);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B5AC49, #3CA55C);
+  background: linear-gradient(to top, #38ef7d, #11998e);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }

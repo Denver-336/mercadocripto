@@ -15,7 +15,7 @@ export const ListaCripto = () => {
       <div className="row d-flex align-items-center justify-content-center g-2 mt-">
         {
           data?.map(({ rank, id, name, priceUsd }) => (
-            <div key={id} className="card text-center mb-3 col-10 col-sm-2 m-4">
+            <div key={id} className="card text-center mb-3 col-10 col-sm-3 col-lg-2 m-4">
               <div className="card-header">{rank}</div>
               <div className="card-body">
                 <h5 className="card-title">{name}</h5>
