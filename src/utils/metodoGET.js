@@ -1,3 +1,4 @@
+import axios from "axios"
 import { useEffect, useState } from "react"
 
 export default function metodoGET (endpoint) {
@@ -6,9 +7,9 @@ export default function metodoGET (endpoint) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-      fetch(endpoint)
-      .then(resp => resp.json())
-      .then(data => setData(data.data))
+    axios
+      .get(endpoint)
+      .then(data => setData(data.data.data))
       .catch((error) => setError(error))
       .finally(() => setLoading(false))
   }, [])
